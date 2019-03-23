@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/androidbackground1"/>
+    <Button
+        android:id="@+id/Button_WiFi"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Button_WiFi_Info"
+        android:layout_centerHorizontal="true"
+        android:text="Set WiFi"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/Button_WiFi_Info"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Button_QR_Code"
+        android:layout_centerHorizontal="true"
+        android:text="WiFi Info"
+        android:textAllCaps="false"
+        android:enabled="false"/>
+    <Button
+        android:id="@+id/Button_QR_Code"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="QR Code"
+        android:textAllCaps="false"
+        android:enabled="false"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/Lottie1"
+        android:layout_below="@id/Button_QR_Code"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="48dp"
+        android:layout_centerHorizontal="true"
+        app:lottie_fileName="loading_rectangles.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+    <TextView
+        android:id="@+id/Text_View_Copyright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="© 2019 - Verovszki Tamás"
+        android:textColor="@color/colorWhite"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>
